@@ -236,7 +236,9 @@ Drug-Target-Affinity-Prediction
 │
 ├── drug_target_affinity_prediction.ipynb    # full pipeline, with outputs
 │
-└── README.md
+├── README.md
+│
+└── LICENSE
 ```
 
 Running the notebook generates the following locally (not tracked in the repository):
@@ -383,4 +385,10 @@ If you have any questions, suggestions, or would like to collaborate, feel free 
 
 ## License
 
-This project is released under the **MIT License**.
+This project is released under an **Educational Use License** — see [LICENSE](LICENSE) for the full terms.
+
+You are free to use, modify, and share it for **educational, academic, and non-commercial research** purposes with attribution. Commercial use requires prior written permission.
+
+The model is intended for research and learning only. It is **not validated for clinical, diagnostic, or therapeutic use** and must not be relied upon for medical decision-making or as a substitute for experimental validation.
+
+The Davis dataset, ESM2 weights, and all third-party libraries remain under their own licenses.
