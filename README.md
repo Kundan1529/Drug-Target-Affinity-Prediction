@@ -229,75 +229,8 @@ Internally: SMILES → RDKit → molecular graph, sequence → ESM2 → 640-d em
 
 ---
 
-# Project Structure
 
-```
-Drug-Target-Affinity-Prediction
-│
-├── drug_target_affinity_prediction.ipynb    # full pipeline, with outputs
-│
-├── README.md
-│
-└── LICENSE
-```
 
-Running the notebook generates the following locally (not tracked in the repository):
-
-```
-DTI_Project/
-├── processed/
-│   ├── graphs/drug_graphs.pt              # molecular graphs
-│   └── protein_embeddings/                # cached ESM2 embeddings
-│       └── esm2_embeddings.pt
-├── artifacts/
-├── models/
-└── figures/
-
-checkpoints/
-├── best_model.pt                          # best validation checkpoint
-├── latest.pt                              # resumable training state
-├── history.json                           # per-epoch losses and lr
-├── test_results.json                      # final test metrics
-└── sample_explanation.pt                  # GNNExplainer output
-
-DeepDTA/                                   # cloned Davis dataset
-```
-
----
-
-# Installation
-
-Clone the repository
-
-```bash
-git clone https://github.com/Kundan1529/Drug-Target-Affinity-Prediction.git
-```
-
-Create and activate a virtual environment
-
-Linux / macOS
-
-```bash
-python -m venv venv && source venv/bin/activate
-```
-
-Windows
-
-```bash
-python -m venv venv && venv\Scripts\activate
-```
-
-Install dependencies
-
-```bash
-pip install torch torch-geometric rdkit transformers accelerate biopython
-```
-
-```bash
-pip install pandas numpy matplotlib seaborn scikit-learn scipy tqdm
-```
-
----
 
 # Usage
 
